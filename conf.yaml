@@ -1,0 +1,175 @@
+## All options defined here are available to all instances.
+#
+init_config:
+
+
+instances:
+
+  # stage 1
+  # typea files
+  - directory: /var/stage1
+    name: stage1
+    dirtagname: stage
+    filetagname: stage1file
+    filegauges: true
+    pattern: 'typea*'
+    recursive: false
+    follow_symlinks: true
+    stat_follow_symlinks: true
+    countonly: false
+    ignore_missing: false
+    service: blackrock_stage1
+    min_collection_interval: 15
+    empty_default_hostname: false
+    tags: ["vendor:vendor1"]
+  # typeb files
+  - directory: /var/stage1
+    name: stage1
+    dirtagname: stage
+    filetagname: stage1file
+    filegauges: true
+    pattern: 'typeb*'
+    recursive: false
+    follow_symlinks: true
+    stat_follow_symlinks: true
+    countonly: false
+    ignore_missing: false
+    service: blackrock_stage1
+    min_collection_interval: 15
+    empty_default_hostname: false
+    tags: ["vendor:vendor2"]
+  # typec files
+  - directory: /var/stage1
+    name: stage1
+    dirtagname: stage
+    filetagname: stage1file
+    filegauges: true
+    pattern: 'typec*'
+    recursive: false
+    follow_symlinks: true
+    stat_follow_symlinks: true
+    countonly: false
+    ignore_missing: false
+    service: blackrock_stage1
+    min_collection_interval: 15
+    empty_default_hostname: false
+    tags: ["vendor:vendor3"]
+  # typed files
+  - directory: /var/stage1
+    name: stage1
+    dirtagname: stage
+    filetagname: stage1file
+    filegauges: true
+    pattern: 'typed*'
+    recursive: false
+    follow_symlinks: true
+    stat_follow_symlinks: true
+    countonly: false
+    ignore_missing: false
+    service: blackrock_stage1
+    min_collection_interval: 15
+    empty_default_hostname: false
+    tags: ["vendor:vendor4"]
+  # typee files
+  - directory: /var/stage1
+    name: stage1
+    dirtagname: stage
+    filetagname: stage1file
+    filegauges: true
+    pattern: 'typee*'
+    recursive: false
+    follow_symlinks: true
+    stat_follow_symlinks: true
+    countonly: false
+    ignore_missing: false
+    service: blackrock_stage1
+    min_collection_interval: 15
+    empty_default_hostname: false
+    tags: ["vendor:vendor5"]
+
+  # stage 2
+  # typea files
+  - directory: /var/stage2
+    name: stage2
+    dirtagname: stage
+    filetagname: stage2file
+    filegauges: true
+    pattern: 'outputa*'
+    recursive: false
+    follow_symlinks: true
+    stat_follow_symlinks: true
+    countonly: false
+    ignore_missing: false
+    service: blackrock_stage2
+    min_collection_interval: 15
+    empty_default_hostname: false
+    tags: 
+      - "client:client1"
+  # typeb files
+  - directory: /var/stage2
+    name: stage2
+    dirtagname: stage
+    filetagname: stage2file
+    filegauges: true
+    pattern: 'outputb*'
+    recursive: false
+    follow_symlinks: true
+    stat_follow_symlinks: true
+    countonly: false
+    ignore_missing: false
+    service: blackrock_stage2
+    min_collection_interval: 15
+    empty_default_hostname: false
+    tags: 
+      - "client:client2"
+  # typec files
+  - directory: /var/stage2
+    name: stage2
+    dirtagname: stage
+    filetagname: stage2file
+    filegauges: true
+    pattern: 'outputc*'
+    recursive: false
+    follow_symlinks: true
+    stat_follow_symlinks: true
+    countonly: false
+    ignore_missing: false
+    service: blackrock_stage2
+    min_collection_interval: 15
+    empty_default_hostname: false
+    tags: 
+      - "client:client3"
+  # typed files
+  - directory: /var/stage2
+    name: stage2
+    dirtagname: stage
+    filetagname: stage2file
+    filegauges: true
+    pattern: 'outputd*'
+    recursive: false
+    follow_symlinks: true
+    stat_follow_symlinks: true
+    countonly: false
+    ignore_missing: false
+    service: blackrock_stage2
+    min_collection_interval: 15
+    empty_default_hostname: false
+    tags: 
+      - "client:client4"
+  # typec files
+  - directory: /var/stage2
+    name: stage2
+    dirtagname: stage
+    filetagname: stage2file
+    filegauges: true
+    pattern: 'outpute*'
+    recursive: false
+    follow_symlinks: true
+    stat_follow_symlinks: true
+    countonly: false
+    ignore_missing: false
+    service: blackrock_stage2
+    min_collection_interval: 15
+    empty_default_hostname: false
+    tags: 
+      - "client:client5"
